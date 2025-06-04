@@ -1,52 +1,69 @@
-# Customer Engagement Metrics & K-Means Clustering Analysis
+Telecom Customer Segmentation Using K-Means Clustering
+This project delivers a data-driven analysis of telecom user engagement based on traffic behavior across popular applications (YouTube, Google, Email, Netflix, Gaming, Others). Using K-Means clustering, customers are segmented by activity level to uncover behavioral patterns and generate actionable insights for customer targeting and service optimization.
 
-This project analyzes customer engagement metrics based on upload and download traffic across various applications (Google, Email, Youtube, Netflix, Gaming, Other) using k-means clustering. The goal is to classify users based on their engagement levels and provide insights into customer behavior.
+🚀 Project Objectives
+Customer Engagement Aggregation
 
-## Project Overview
+Aggregate upload/download traffic per customer (MSISDN) and application.
 
-The following tasks are performed:
+Rank top 10 customers by engagement per app.
 
-1. **Aggregate Customer Engagement Metrics**: 
-   - Aggregation of upload and download traffic (in bytes) for each application per customer (MSISDN).
-   - Reporting the top 10 customers per engagement metric.
+Data Normalization & K-Means Segmentation
 
-2. **Normalize Engagement Metrics and K-Means Clustering**:
-   - Normalization of engagement metrics.
-   - Running K-means clustering to classify customers into 3 groups based on their engagement levels.
-   - Analysis of the minimum, maximum, average, and total engagement metrics for each cluster.
+Normalize traffic metrics for comparability.
 
-3. **User Engagement by Application**:
-   - Aggregation of user total traffic per application.
-   - Identifying the top 10 most engaged users per application.
+Apply K-Means clustering to segment users into 3 engagement tiers.
 
-4. **Visualize the Top 3 Most Used Applications**:
-   - Plotting the top 3 most used applications based on total traffic.
+Analyze min, max, average, and total metrics per cluster.
 
-5. **Optimizing Number of Clusters (Elbow Method)**:
-   - Determining the optimal number of clusters (k) using the elbow method.
+Application Usage Insights
 
-## Project Structure
-├── data/ # Raw and processed data files ├── notebooks/ # Jupyter notebooks for data exploration and analysis ├── src/ # Source code for data preprocessing and analysis ├── reports/ # Final report and supporting documentation ├── requirements.txt # Python dependencies └── README.md # Project overview and instructions
+Measure total traffic per application.
 
+Highlight top users per application.
 
-## Setup Instructions
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/Ofgeha-Gelana/TellCo-Telecom-Analysis-Dashboard.git
-    cd TellCo-Telecom-Analysis-Dashboard
-    ```
+Usage Trends Visualization
 
-2. **Create a virtual environment and install dependencies:**
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-    pip install -r requirements.txt
-    ```
+Identify and plot the top 3 most-used applications.
 
-3. **Download and prepare the data:**
-    - Place raw data files in the `Data/` directory.
+Cluster Optimization (Elbow Method)
 
-4. **Run the Jupyter notebooks:**
-    ```bash
-    jupyter notebook notebooks/
-    ```
+Determine the optimal number of clusters using the Elbow Method.
+
+🗂️ Project Structure
+bash
+Copy
+Edit
+TellCo-Telecom-Analytics/
+├── data/             # Raw and cleaned data files
+├── notebooks/        # Jupyter notebooks for analysis
+├── src/              # Python modules for preprocessing & clustering
+├── reports/          # Visualizations and summary reports
+├── requirements.txt  # Dependency list
+└── README.md         # Project documentation
+⚙️ Setup Instructions
+Clone the Repository
+
+bash
+Copy
+Edit
+git clone https://github.com/gworku/TellCo-Telecom-Analytics-.git
+cd TellCo-Telecom-Analytics-
+Create a Virtual Environment
+
+bash
+Copy
+Edit
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+Add Data Files
+
+Place your raw telecom data into the data/ directory.
+
+Launch Notebooks
+
+bash
+Copy
+Edit
+jupyter notebook notebooks/
